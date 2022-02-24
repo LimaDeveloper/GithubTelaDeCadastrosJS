@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Projeto javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/script1.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <h1>Sistema de Busca</h1>
+        </header>
+                <main>
+
+                    <div class="title"> 
+                        <h2>Material</h2>
+                        <span>Busca de Material do Kanban</span>
+                    </div>
+                    <div class="card">
+                        <div class="lineInput">
+                            <label>Material</label>
+                            <input type="text" name="" id="material" placeholder=" Material solicitado">
+                        </div>
+                        <div class="lineInput">
+                            <label>Quantidade</label>
+                            <input type="number" name="" id="qtdade" placeholder="Quantidade em estoque">
+                        </div>
+                            <button onclick="produto.salvar()" id="btn1">Salvar</button>
+                            <button onclick="produto.cancelar()">Cancelar</button>
+                        </div>
+                    <div class="content">
+                        <table border="1">
+                                <thead>
+                                    <th class="center">ID</th>
+                                    <th>Material</th>
+                                    <th>Quantidade</th>
+                                    <th class="center">Ações</th>
+                                </thead>
+                                <tbody id="tbody">
+                                   
+                                </tbody>
+                        </table>
+                    </div>
+                 </main>  
+    </body>
+</html>
